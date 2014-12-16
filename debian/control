@@ -1,0 +1,18 @@
+Source: box2d
+Section: main
+Priority: extra
+Maintainer: Michael Koval <mkoval@cs.cmu.edu>
+Build-Depends: debhelper (>= 8.0.0), cmake, mesa-common-dev, libgl1-mesa-dev, libglu1-mesa-dev
+Standards-Version: 3.9.2
+Homepage: http://box2d.org/
+#Vcs-Git: git://git.debian.org/collab-maint/box2d.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/box2d.git;a=summary
+
+Package: box2d
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Box2D is an open source C++ engine for simulating rigid bodies in 2D.
+ Box2D is an open source C++ engine for simulating rigid bodies in 2D. Box2D is
+ developed by Erin Catto and has the zlib license. While the zlib license does
+ not require acknowledgement, we encourage you to give credit to Box2D in your
+ product.
