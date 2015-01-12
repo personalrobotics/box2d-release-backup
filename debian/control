@@ -2,7 +2,7 @@ Source: box2d
 Section: misc
 Priority: extra
 Maintainer: Michael Koval <mkoval@cs.cmu.edu>
-Build-Depends: debhelper (>= 8.0.0), cmake, mesa-common-dev
+Build-Depends: debhelper (>= 8.0.0), cmake, mesa-common-dev, freeglut3-dev
 Standards-Version: 3.9.2
 Homepage: http://box2d.org
 Vcs-SVN: http://box2d.googlecode.com/svn/trunk/
@@ -10,7 +10,7 @@ Vcs-Browser: https://code.google.com/p/box2d/source/browse/
 
 Package: box2d
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, freeglut3
 Description: A 2D Physics Engine for Games
  Box2D is an open source C++ engine for simulating rigid bodies in 2D. Box2D is
  developed by Erin Catto and has the zlib license. While the zlib license does
