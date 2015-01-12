@@ -1,8 +1,8 @@
 Source: box2d
 Section: misc
 Priority: extra
-Maintainer: Michael Koval <mkoval@unknown>
-Build-Depends: debhelper (>= 8.0.0), cmake
+Maintainer: Michael Koval <mkoval@cs.cmu.edu>
+Build-Depends: debhelper (>= 8.0.0), cmake, mesa-common-dev
 Standards-Version: 3.9.2
 Homepage: http://box2d.org
 Vcs-SVN: http://box2d.googlecode.com/svn/trunk/
