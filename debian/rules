@@ -8,7 +8,10 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
-export DEB_CMAKE_EXTRA_FLAGS=-DBOX2D_BUILD_SHARED=1 -DBOX2D_BUILD_STATIC=0 -DBOX2D_BUILD_EXAMPLES=0
 
 %:
 	dh $@ 
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DBOX2D_BUILD_SHARED=1 -DBOX2D_BUILD_STATIC=0 -DBOX2D_BUILD_EXAMPLES=0
+
