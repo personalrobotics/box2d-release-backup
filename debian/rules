@@ -11,3 +11,7 @@
 
 %:
 	dh $@ 
+
+override_dh_auto_build:
+	cmake -DCMAKE_INSTALL_PREFIX=/usr -DBOX2D_BUILD_SHARED=1 -DBOX2D_BUILD_STATIC=0 .
+	make
